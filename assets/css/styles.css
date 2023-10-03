@@ -1,0 +1,60 @@
+:root{
+    --primary-color: #07086A;
+    --white: #FFFFFF;
+    --gap: 3rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2{font-size: 5.5rem;}
+
+h3{font-size: 5rem;}
+
+h4{font-size: 4.5rem;}
+
+h5{font-size: 4rem;}
+
+h6{font-size: 3.5rem;}
+
+.main-bg{
+    background-image: url('../img/main-bg.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white);
+}
+
+.white-bg-section{
+    background: var(--white); 
+}
+
+.main-content{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.section{
+    min-height: 100vh;
+}
