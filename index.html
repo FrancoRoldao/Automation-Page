@@ -13,13 +13,22 @@
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="main-bg">
+<body class="white-bg-section">
+
+    <input id="close-menu" class="close-menu" type="checkbox" 
+    aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
     <aside class="menu white-bg-section">
-        <sdiv class="main-content menu-content">
-            <a href="#"> <h1>LOGO</h1></a>
+        <div class="main-content menu-content">
+       <h1 onclick="getElementById('close-menu').checked=false;">
+
+        <a href="#home">LOGO</a>
+       </h1>
+          
        
         <nav>
-           <ul>
+           <ul onclick="getElementById('close-menu').checked=false;">
             <li><a href="#intro">Intro</a></li>
             <li><a href="#top3">Top 3</a></li>
             <li><a href="#grid-one">Grid-One</a></li>
@@ -242,6 +251,8 @@
 <footer id="footer" class="white-bg-section">
   <p><a href="">Feito com <span class="heart">♥</span> por Franco Roldão</a></p>
 </footer>
+
+<a class="back-to-top"  href="#">⮝</a>
 
 </body>
 </html>
