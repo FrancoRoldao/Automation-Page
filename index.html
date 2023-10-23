@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/classesReutilizaveis.css">
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="/assets/js/script.js"></script>
 </head>
 <body class="white-bg-section">
 
@@ -23,16 +24,16 @@
         <div class="main-content menu-content">
        <h1 onclick="getElementById('close-menu').checked=false;">
 
-        <a href="#home">LOGO</a>
+        <a href="#home">Automation Page</a>
        </h1>
           
        
         <nav>
            <ul onclick="getElementById('close-menu').checked=false;">
             <li><a href="#intro">Intro</a></li>
-            <li><a href="#top3">Top 3</a></li>
-            <li><a href="#grid-one">Grid-One</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testeQa">Teste e QA</a></li>
+            <li><a href="#7principios">Os 7 princípios</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
             <li><a href="#grid-two">Grid-Two</a></li>
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#contact-us">Contact Us</a></li>
@@ -46,72 +47,147 @@
     <section id="intro" class="intro main-bg section">
         <div class="main-content intro-content">
         <div class="intro-text-content">
-     <h2>JANUARY BRINGS US FIREFOX 85</h2>
-     <p>To wrap up January, we are proud to bring you the release of Firefox 85. In this version we are bringing you support for the :focus-visible pseudo-class in CSS and associated devtools, and the complete removal of Flash support from Firefox.</p>
+     <h2>Pra que serve essa página?</h2>
+     <p>Pra você que está estudando automação de testes treinar suas habilidades e colocar em prática o desenvolvimento de cenários automatizados e validações. <BR>Além de aprender um pouco mais sobre QA e Testes, com as explicações da área extraidas diretamente do <a href="https://bstqb.org.br/b9/ctfl" target="_blank">CTFL Syllabus</a>.</BR></p>
     </div>
 
     <div class="intro-img">
 
-        <img src="/landing-page/assets/img/javascript-optmized.svg" alt="logo de html, javascript e css.">
+        <img src="/assets/img/intro_programmer.svg" alt="Mulher sentada na cadeira, em frente ao computador, segurando uma caneca de café, visualizando linhas de código de programação.">
     </div>
     </div> 
     </section>
 
-    <section id="top3"  class="white-bg-section section">
+    <section id="testeQa"  class="white-bg-section section">
 
-        <div class="main-content top3-content">
-            <h2>TOP 3 JOBS</h2>
-            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine’s performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.</p>
-            <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
-            <p>We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur, and discuss various updater problems we had to deal with. We’ll conclude with the release and an overview of various other improvements that are in the pipeline.</p>
+        <div class="main-content testeQa-content">
+            <h2>Afinal, o que é teste e QA?</h2>
+            <p class="p-testeQA">Embora as pessoas geralmente usem os termos "teste" e "garantia da qualidade" (QA) de forma
+              intercambiável, teste e QA não são a mesma coisa. <a href="#teste">Teste</a> é voltado para o produto, enquanto <a href="#qa">QA</a> é voltado para o processo.</p>
+            <h4 id="teste"  class="intro-heading">Teste</h4>
+            <p class="p-testeQA">O teste de software é um conjunto de atividades para descobrir defeitos e avaliar a qualidade dos
+              artefatos de software. Esses artefatos, quando estão sendo testados, são conhecidos como objetos
+              de teste. <br> Vale lembrar que teste também inclui outras atividades e deve estar alinhado com o  ciclo de vida de desenvolvimento de
+              software.</p>
+              <h4  id="qa" class="intro-heading">QA</h4>
+            <p>A QA é uma abordagem preventiva e orientada para o processo que se concentra na implementação
+              e no aprimoramento dos processos. Ela funciona com base no fato de que, se um bom processo for
+              seguido corretamente, ele gerará um bom produto. A QA se aplica aos processos de
+              desenvolvimento e teste e é responsabilidade de todos em um projeto. </p>
+            
         </div>
     </section>
 
     <!--<section class="section white-bg-section"></section>-->
     
-    <section id="grid-one" class="grid-one main-bg section">
+    <section id="7principios" class="grid-one main-bg section">
     <div class="main-content grid-one-content">
-        <h2 class="grid-main-heading">My Grid</h2>
-        <p class="grid-description">Descrição</p>
-        <div class="grid">
+        <h3 class="grid-main-heading">Os 7 princípios do Teste de Software.</h3>
+        <p class="grid-description">Ao longo dos anos, foram sugeridos vários princípios de teste que oferecem diretrizes gerais
+          aplicáveis a todos os testes. Descrição conforme syllabus:</p>
+        <div class="grid" id="grid7principios">
         <article>
-            <h3>Teste 1</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non assumenda facere vitae ipsam, praesentium consequuntur laboriosam, deleniti facilis distinctio eius. Nesciunt perspiciatis quidem, deserunt esse odio porro saepe temporibus.</p>
+            <h3>O teste mostra a presença, não a ausência de defeitos</h3>
+        <p>Os testes podem mostrar que os
+          defeitos estão presentes no objeto de teste, mas não podem provar que não há defeitos
+          (Buxton 1970). Os testes reduzem a probabilidade de defeitos não serem descobertos no
+          objeto de teste, mas, mesmo que nenhum defeito seja encontrado, os testes não podem
+          provar a corretude do objeto de teste.</p>
        </article>
        <article>
-        <h3>Teste 2</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non assumenda facere vitae ipsam, praesentium consequuntur laboriosam, deleniti facilis distinctio eius. Nesciunt perspiciatis quidem, deserunt esse odio porro saepe temporibus.</p>
+        <h3>Testes exaustivos são impossíveis</h3>
+        <p>Testar tudo não é viável, exceto em casos triviais (Manna
+          1978). Em vez de tentar testar exaustivamente, as técnicas de teste, a
+          priorização de casos de teste e os testes baseados em riscos
+          devem ser usados para concentrar os esforços de teste. </p>
      </article>  
      <article>
-        <h3>Teste 3</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non assumenda facere vitae ipsam, praesentium consequuntur laboriosam, deleniti facilis distinctio eius. Nesciunt perspiciatis quidem, deserunt esse odio porro saepe temporibus.</p>
+        <h3>Testes antecipados economizam tempo e dinheiro</h3>
+        <p>Os defeitos que são removidos no
+          início do processo não causarão defeitos subsequentes nos produtos de trabalho derivados.
+          O custo da qualidade será reduzido, pois menos falhas ocorrerão posteriormente no SDLC
+          (Boehm, 1981). Para encontrar defeitos logo no início, os testes devem ser iniciados o mais cedo possível.</p>
      </article>  
+     <article>
+      <h3>Os defeitos se agrupam</h3>
+  <p>Um pequeno número de componentes do sistema geralmente
+    contém a maioria dos defeitos descobertos ou é responsável pela maioria das falhas
+    operacionais (Enders 1975). Esse fenômeno é uma ilustração do Princípio de Pareto. Os
+    agrupamentos de defeitos previstos e os agrupamentos de defeitos reais observados durante
+    o teste ou em operação são uma entrada importante para o teste baseado em risco.</p>
+ </article>
+ <article>
+  <h3>Os testes se degradam</h3>
+<p>Se os mesmos testes forem repetidos muitas vezes, eles se tornarão
+  cada vez mais ineficazes na detecção de novos defeitos (Beizer 1990). Para superar esse
+  efeito, talvez seja necessário modificar os testes e os dados de teste existentes, e talvez seja
+  necessário escrever novos testes. Entretanto, em alguns casos, a repetição dos mesmos
+  testes pode ter um resultado benéfico, por exemplo, em testes de regressão automatizados.</p>
+</article>
+<article>
+  <h3>Os testes dependem do contexto</h3>
+<p>Não existe uma única abordagem universalmente
+  aplicável aos testes. Os testes são feitos de forma diferente em contextos diferentes (Kaner
+  2011). </p>
+</article>
+<article>
+  <h3>Falácia da ausência de defeitos</h3>
+<p> É uma falácia (ou seja, uma concepção errônea) esperar
+  que a verificação do software garanta o sucesso de um sistema. Testar exaustivamente todos
+  os requisitos especificados e corrigir todos os defeitos encontrados ainda pode produzir um
+  sistema que não atenda às necessidades e expectativas dos usuários, que não ajude a atingir
+  os objetivos de negócio do cliente e que seja inferior a outros sistemas concorrentes. Além
+  da verificação, a validação também deve ser realizada (Boehm, 1981). </p>
+</article>
+
     </div>
     </div>
 </section>
 
-<section id="gallery" class="grid-one white-bg-section">
+<section id="curiosidades" class="grid-one white-bg-section">
     <div class="main-content grid-one-content">
-        <h2 class="grid-main-heading">Gallery</h2>
-        <p class="grid-description">Descrição</p>
+        <h2 class="grid-main-heading">Curiosidades</h2>
+        <p class="grid-description">Clique em alguma imagem e descubra curiosidades sobre testes automatizados:</p>
         <div class="grid">
         <div class="gallery-img">
-             <img src="https://source.unsplash.com/random/360x360?a=1" alt="random image from unsplash.com">
+             <img src="/assets/img/curiosidades_img/curiosidades1-linguagem.png" alt="linhas de código de programação" onclick="esconderImagem(this)">
+             <div class="gallery-text" onclick="exibirImagem(this)">
+              
+              <p >
+                <b>Você conhece alguma linguagem de programação?</b> <br> <br>
+                Saiba que é possível utilizar diversas linguagens em conjunto com ferramentas para automatizar testes, ai vão algumas dicas de linguagens: <br> <br>
+
+                - Java <br>
+                - Javascript <br>
+                - C#  <br>
+                - Ruby <br>
+
+              </p>
+            
+            </div>
+             
         </div>
+
        <div class="gallery-img">
-            <img src="https://source.unsplash.com/random/360x360?a=2" alt="random image from unsplash.com">
+            <img src="/assets/img/curiosidades_img/ferramentas-automacao (1).png" alt="random image from unsplash.com" onclick="esconderImagem(this)" >
+            <div class="gallery-text" onclick="exibirImagem(this)"><p>Teste</div>
        </div>  
+       <!--<div class="gallery-text" ><p>TESTE TESTE</p></div>-->
      <div class="gallery-img">
-        <img src="https://source.unsplash.com/random/360x360?a=3" alt="random image from unsplash.com">
+        <img src="https://source.unsplash.com/random/360x360" alt="random image from unsplash.com" onclick="esconderImagem(this)">
+        <div class="gallery-text" onclick="exibirImagem(this)"><p>TESTE TESTE</p></div>
      </div>  
      <div class="gallery-img">
-        <img src="https://source.unsplash.com/random/360x360?a=4" alt="random image from unsplash.com">
+        <img src="https://source.unsplash.com/random/360x360" alt="random image from unsplash.com" onclick="esconderImagem(this)">
+        <div class="gallery-text" onclick="exibirImagem(this)"><p>TESTE TESTE</p></div>
      </div>  
      <div class="gallery-img">
-        <img src="https://source.unsplash.com/random/360x360?a=5" alt="random image from unsplash.com">
+        <img src="https://source.unsplash.com/random/360x360" alt="random image from unsplash.com" onclick="esconderImagem(this)">
+        <div class="gallery-text" onclick="exibirImagem(this)"><p>TESTE TESTE</p></div>
      </div>  
      <div class="gallery-img">
-        <img src="https://source.unsplash.com/random/360x360?a=6" alt="random image from unsplash.com">
+        <img src="https://source.unsplash.com/random/360x360" alt="random image from unsplash.com" onclick="esconderImagem(this)">
+        <div class="gallery-text" onclick="exibirImagem(this)"><p>TESTE TESTE</p></div>
      </div>  
     </div>
     </div>
@@ -140,7 +216,7 @@
 
 
 <section id="pricing" class="white-bg-section">
-    <div class="main-content top3-content">
+    <div class="main-content testeQa-content">
       <h2>Pricing</h2>
       <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some
         surprises at the machine’s performance. This post details some background information on the experience of
@@ -203,42 +279,43 @@
   <section id="contact-us" class="intro main-bg section">
     <div class="main-content intro-content">
     <div class="intro-text-content">
- <h2>Contact US</h2>
+ <h2>Entre em contato</h2>
  <p>Se precisa de alguma ajuda é só mandar sua mensagem!</p>
 </div>
 
 <div class="intro-img">
 
-    <img src="/landing-page/assets/img/javascript-optmized.svg" alt="logo de html, javascript e css.">
+    <img src="/assets/img/contact_us.svg" alt="Uma mão colocando uma carta dentro de um envelope.">
 </div>
 
 <div class="contact-form">
 
   <fieldset class="form-grid">
-    <legend>Contact me</legend>
+    <legend>Preencha o formulário abaixo</legend>
     <div class="form-group">
-      <label for="first-name">First Name</label>
-      <input type="text" name="first-name" id="first-name" placeholder="Your name">
+      <label for="nome">Primeiro Nome</label>
+      <input type="text" name="nome" id="nome" placeholder="Digite seu primeiro nome" required>
     </div>
 
     <div class="form-group full-width">
-      <label for="last-name">Last Name</label>
-      <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+      <label for="sobrenome">Último sobrenome</label>
+      <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu último sobrenome" required>
     </div>
 
     
     <div class="form-group full-width">
       <label for="email">E-mail</label>
-      <input type="text" name="email" id="email" placeholder="Your e-mail">
+      <input type="text" name="email" id="email" placeholder="Digite seu e-mail" required>
     </div>
 
     <div class="form-group full-width">
       <label for="mensagem">Mensagem</label>
-      <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Your message"></textarea>
+      <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem aqui" required></textarea>
     </div>
 
     <div class="form-group full-width">
-      <button type="submit">Send message</button>
+      <button type="submit"  id="enviarForm" onclick="alert('Seu formulário foi enviado!')">Enviar mensagem</button>
+      
     </div>
 
   </fieldset>
