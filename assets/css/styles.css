@@ -1,12 +1,11 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.intro-content{
+.intro-content {
     position: relative;
-   /* top: -8rem;*/
+    /* top: -8rem;*/
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -14,31 +13,32 @@
 
 }
 
-.intro-text-content, .intro-img{
+.intro-text-content,
+.intro-img {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-  
+
 }
 
 
-.intro-img img{
+.intro-img img {
     max-width: 100%;
     height: auto;
 }
 
-.testeQa-content{
+.testeQa-content {
     text-align: center;
     max-width: 64rem;
-   min-height: 100vh;
-   display: flex;
-   /*flex-flow: column wrap;*/
-   flex-direction: column;
-   flex-wrap: nowrap;
-   justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    /*flex-flow: column wrap;*/
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
-.grid-one-content{
+.grid-one-content {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -46,36 +46,36 @@
 
 }
 
-.grid-main-heading{
+.grid-main-heading {
     margin-bottom: 1rem;
 }
 
-.grid-description{
+.grid-description {
     padding-bottom: 5rem;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
     counter-reset: grid-counter;
 }
 
-  #grid7principios {
+#grid7principios {
     display: grid;
     grid-template-columns: repeat(1, 3fr);
     gap: var(--gap);
     counter-reset: grid-counter;
- }
+}
 
-.grid h3{
+.grid h3 {
     font-size: 3rem;
     position: relative;
     padding-left: 5rem;
     padding-bottom: 2rem;
 }
 
-.grid h3::before{
+.grid h3::before {
     counter-increment: grid-counter;
     content: counter(grid-counter);
     position: absolute;
@@ -86,26 +86,30 @@
     transform: rotate(5deg);
 }
 
-.gallery-img{
+.curiosidades-img {
     width: 100%;
     max-width: 36rem;
     max-height: 36rem;
     overflow: hidden;
-    z-index: 2;
     cursor: pointer;
-  
+
 }
 
-.gallery-img img{
+.curiosidades-img img {
     transition: all 300ms ease-in-out;
+    image-rendering: optimizeQuality;
 }
 
 
-.gallery-img img:hover{
-   transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+.curiosidades-img img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
- 
-.contact-form{
+
+.curiosidades-img:focus {
+    border: solid 1rem black;
+}
+
+.contact-form {
     grid-column: span 2;
 }
 
@@ -118,25 +122,25 @@
 
 }
 
-.form-grid legend{
+.form-grid legend {
     font-style: italic;
     font-size: 1.6rem;
     margin-bottom: 3rem;
 
 }
 
-.form-group{
+.form-group {
 
     flex: 1 1 320px;
 }
 
-.form-group label{
+.form-group label {
 
     display: block;
     margin-bottom: 1rem;
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
     border: none;
     background: white;
@@ -146,12 +150,12 @@
     outline: none;
 }
 
-.form-group input:focus, 
+.form-group input:focus,
 .form-group textarea:focus {
-   box-shadow: 0 0 10px 2px var(--primary-color);
+    box-shadow: 0 0 10px 2px var(--primary-color);
 }
 
-.form-group button{
+.form-group button {
     border: 0.5rem solid white;
     background: none;
     color: white;
@@ -161,12 +165,12 @@
     transition: all 300ms ease-in-out;
 }
 
-.form-group button:hover{
+.form-group button:hover {
     background: white;
     color: var(--primary-color);
 }
 
-.form-group ::placeholder{
+.form-group ::placeholder {
     color: var(--light-gray-color);
 }
 
@@ -175,11 +179,11 @@
     text-align: center;
 }
 
-.footer a{
+.footer a {
     color: #444;
 }
 
-.heart{
+.heart {
     color: var(--secondary-color);
 }
 
@@ -188,11 +192,11 @@
     padding: 3rem;
 }
 
-.close-menu{
+.close-menu {
     display: none;
 }
 
-.back-to-top{
+.back-to-top {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
@@ -208,51 +212,54 @@
 
 }
 
-@media (max-width: 800px){
-    .intro-content, .grid{
+@media(max-width: 800px) {
+
+    .intro-content,
+    .grid {
         grid-template-columns: 1fr;
     }
 
-    .gallery-img{
+    .curiosidades-img {
         width: 100%;
         max-width: 100%;
         max-height: 100%;
     }
 
-    .gallery-img img {
+    .curiosidades-img img {
         width: 100%;
     }
 
-    .grid-one-content{
+    .grid-one-content {
         display: block;
-      }
+    }
 
     .menu {
         bottom: 0;
         text-align: center;
     }
 
-    .menu-content, .menu-content ul{
+    .menu-content,
+    .menu-content ul {
         flex-direction: column;
         justify-content: center;
     }
 
-    .menu-content{
+    .menu-content {
         height: 100vh;
     }
 
-    .menu{
+    .menu {
         display: none;
     }
 
-    .close-menu{
+    .close-menu {
         position: fixed;
         z-index: 2;
         top: 0;
         left: 0;
     }
 
-    .close-menu-label::after{
+    .close-menu-label::after {
         content: '≡';
         position: fixed;
         z-index: 2;
@@ -269,22 +276,22 @@
         cursor: pointer;
     }
 
-    .close-menu:checked~.menu{
+    .close-menu:checked~.menu {
         display: block;
     }
 
-    .close-menu:checked~.close-menu-label::after{
+    .close-menu:checked~.close-menu-label::after {
         display: block;
         content: '×';
     }
 
-    .menu-spacing{
+    .menu-spacing {
         display: none;
     }
 
 }
 
-div .gallery-text {
+div .curiosidades-text {
 
     width: 100%;
     min-height: 40rem;
@@ -292,13 +299,33 @@ div .gallery-text {
     max-height: 36rem;
     overflow: auto;
     z-index: 1;
-    background-color: var(--secondary-clor);
     color: whitesmoke;
     padding: 2rem;
     display: none;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
+#curiosidades-linguagemProgramacao {
+    background-color: rgba(22, 21, 21, 0.938);
+}
 
+#curiosidades-selenium {
+    background-color: rgb(9, 188, 9);
+}
 
+#curiosidades-junit {
+    background-color: rgb(2, 58, 38);
+}
+
+#curiosidades-cucumber {
+    background-color: rgb(97, 161, 97);
+}
+
+#curiosidades-appium {
+    background-color: rgb(96, 28, 160);
+}
+
+#curiosidades-restAssured {
+    background-color: rgba(22, 21, 21, 0.938);
+}
