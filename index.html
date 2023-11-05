@@ -46,7 +46,7 @@
                         <a href="#curiosidades">Curiosidades</a>
                     </li>
                     <li>
-                        <a href="#grid-two">Grid-Two</a>
+                        <a href="#inputs">Inputs</a>
                     </li>
                     <li>
                         <a href="#pricing">Pricing</a>
@@ -429,31 +429,91 @@
         </div>
     </div>
 </section>
-<section id="grid-two" class="grid-one main-bg section">
+<section id="inputs" class="grid-one main-bg section">
     <div class="main-content grid-one-content">
-        <h2 class="grid-main-heading">My Grid</h2>
-        <p class="grid-description">Descrição</p>
+        <h2 class="grid-main-heading">Tipos de inputs HTML</h2>
+        <p class="grid-description">A tag <b>input</b> em HTML é um elemento de formulário usado para criar campos de entrada interativos em uma página da web. Esses campos de entrada podem ser usados para coletar informações do usuário, como texto, números, datas, seleções, etc. 
+            A tag <b>input</b> é um elemento vazio, o que significa que não tem uma tag de fechamento. Em vez disso, as informações sobre o tipo de entrada e o valor são especificadas usando atributos. <br><br>
+
+            Não é novidade que os inputs estão presenta na maioria dos sites, então logo abaixo vou deixar alguns exemplos interativos para você praticar em seus testes automatizados! 
+        
+        </p>
         <div class="grid">
             <article>
-                <h3>Teste 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non assumenda facere vitae ipsam,
-                    praesentium consequuntur laboriosam, deleniti facilis distinctio eius. Nesciunt perspiciatis quidem,
-                    deserunt esse odio porro saepe temporibus.</p>
+                <h3>Checkbox</h3>
+                <div class="inputCheckbox inputsTreinamento">
+                    <div class="inputCheckbox">
+                    <form>
+                    <label for="inputCheckbox">Opção 1</label>
+            <input type="checkbox" name="inputCheckbox" id="inputCheckbox1" value="Opção 1">
+            <label for="inputCheckbox">Opção 2</label>
+            <input type="checkbox" name="inputCheckbox" id="inputCheckbox2" value="Opção 2">
+            <button type="submit" class="buttonInputs" onclick="informarOpcoesSelecionadas('checkbox')">Enviar</button>
+            <button type="reset" class="buttonInputs">Reset</button>
+        </form>
+        <p>Ambas podem ser selecionadas.</p>
+               </div>
+            </div>
+                   <!---->
             </article>
             <article>
-                <h3>Teste 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non assumenda facere vitae ipsam,
-                    praesentium consequuntur laboriosam, deleniti facilis distinctio eius. Nesciunt perspiciatis quidem,
-                    deserunt esse odio porro saepe temporibus.</p>
+                <h3>Radio Button</h3>
+                <div class="inputsTreinamento">
+                    <div class="inputRadio">
+            <form>
+           <label for="inputRadio1">Sim
+            <input type="radio" name="inputRadio1" id="inputRadioSim" value="Sim">
+            </label>
+            <label for="inputRadio1">Não
+                <input type="radio" name="inputRadio1" id="inputRadioNao" value="Não">
+               </label>
+               <button type="submit" class="buttonInputs" onclick="informarOpcoesSelecionadas('radio')">Enviar</button>
+               <button type="reset" class="buttonInputs">Reset</button>
+            </form>
+            <p>Só uma opção pode ser selecionada.</p>
+        </div>
+        </div>
+
+        
+
             </article>
             <article>
                 <h3>Teste 3</h3>
+                <div class="inputData inputsTreinamento">
+                    <div class="inputData">
+                        <form >
+                    <label for="inputData">Selecione uma data</label>
+            <input type="date" name="inputData" id="inputData">
+            <button type="submit" class="buttonInputs" onclick="informarDataSelecionada()">Enviar</button>
+            <button type="reset" class="buttonInputs">Reset</button>
+
+        </form>
+        </div>
+        </div>
+            </article>
+
+            <article>
+                <h3 id="h3-inputs-4">Teste 3</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non assumenda facere vitae ipsam,
                     praesentium consequuntur laboriosam, deleniti facilis distinctio eius. Nesciunt perspiciatis quidem,
                     deserunt esse odio porro saepe temporibus.</p>
             </article>
-        </div>
+
+            <article>
+                <h3 id="h3-inputs-5">Teste 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non assumenda facere vitae ipsam,
+                    praesentium consequuntur laboriosam, deleniti facilis distinctio eius. Nesciunt perspiciatis quidem,
+                    deserunt esse odio porro saepe temporibus.</p>
+            </article>
+
+            <article>
+                <h3 id="h3-inputs-6">Teste 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non assumenda facere vitae ipsam,
+                    praesentium consequuntur laboriosam, deleniti facilis distinctio eius. Nesciunt perspiciatis quidem,
+                    deserunt esse odio porro saepe temporibus.</p>
+            </article>
     </div>
+</div>
 </section>
 <section id="pricing" class="white-bg-section">
     <div class="main-content testeQa-content">

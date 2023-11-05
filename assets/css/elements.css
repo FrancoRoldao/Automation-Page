@@ -77,3 +77,16 @@ tfoot td, table th {
 a{
   color: inherit;
 }
+
+/*inicio tratamento barra de rolagem*/
+html ::-webkit-scrollbar {
+  width: 1rem;
+}
+html ::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: var(--primary-color);
+}
+html ::-webkit-scrollbar-track {
+  background: #ededed;
+}
+/*fim tratamento barra de rolagem*/
