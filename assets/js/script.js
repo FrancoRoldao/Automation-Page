@@ -32,27 +32,60 @@ function informarOpcoesSelecionadas(tipoInput) {
     }
 
     if (opcoesSelecionadas.length > 0) {
-        var mensagem = "Você marcou: " + opcoesSelecionadas;
+        var mensagem = "Você marcou → " + opcoesSelecionadas;
         alert(mensagem);
     } else {
         alert("Nenhuma opção marcada!");
     }
 }
 
-// função para informar data selecionada no input date - inputs treinamento.
+// função para informar data ou hora selecionada no input date - inputs treinamento, ao acionar botão "enviar".
 
-function informarDataSelecionada(){
+function informarDataOuHoraSelecionada(dataOuHora){
 
-    let dataSelecionada = document.getElementById("inputData").value;
+    let dataOuHoraSelecionada = "";
+    if(dataOuHora === "data"){
+
+        dataOuHoraSelecionada = document.getElementById("inputData").value;
+    } else{
+        dataOuHoraSelecionada = document.getElementById("inputTime").value;
+    }
 
 
-    if(dataSelecionada === ""){
+    if(dataOuHoraSelecionada === ""){
 
-        alert("Nenhuma data selecionada!");
+        alert(`Nenhuma ${dataOuHora} selecionada!`);
     }else{
-        alert("Data selecionada -> " + dataSelecionada);
+        alert(`${dataOuHora} selecionada → ${dataOuHoraSelecionada}`);
     }
 }
+// informar número selecionado:
+
+function informarNumeroSelecionado(){
+     
+    let numeroSelecionado = document.getElementsByName("inputNumber")[0];
+    let numeroSelecionadoComoNumber = numeroSelecionado.valueAsNumber;
+
+   if(isNaN(numeroSelecionadoComoNumber)){
+
+    alert("Nenhum número selecionado!");
+   } else{
+    alert("Você selecionou o número → " + numeroSelecionadoComoNumber);
+   }
+}
+
+function informarArquivoEscolhido(){
+
+    let arquivoEscolhido  = document.getElementById("inputFile").value;
+    let arquivoTratado   = arquivoEscolhido.split("\\");
+
+    if(arquivoEscolhido === ""){
+
+        alert("Nenhum arquivo inserido!")
+    } else {
+        alert("Arquivo inserido → " + arquivoTratado[2]);
+    }
+   }
 
 
 

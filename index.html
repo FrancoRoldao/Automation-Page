@@ -432,88 +432,130 @@
 <section id="inputs" class="grid-one main-bg section">
     <div class="main-content grid-one-content">
         <h2 class="grid-main-heading">Tipos de inputs HTML</h2>
-        <p class="grid-description">A tag <b>input</b> em HTML é um elemento de formulário usado para criar campos de entrada interativos em uma página da web. Esses campos de entrada podem ser usados para coletar informações do usuário, como texto, números, datas, seleções, etc. 
-            A tag <b>input</b> é um elemento vazio, o que significa que não tem uma tag de fechamento. Em vez disso, as informações sobre o tipo de entrada e o valor são especificadas usando atributos. <br><br>
+        <p class="grid-description">A tag <b>input</b> em HTML é um elemento de formulário usado para criar campos de
+            entrada interativos em uma página da web. Esses campos de entrada podem ser usados para coletar informações
+            do usuário, como texto, números, datas, seleções, etc.
+            A tag <b>input</b> é um elemento vazio, o que significa que não tem uma tag de fechamento. Em vez disso, as
+            informações sobre o tipo de entrada e o valor são especificadas usando atributos. <br><br>
 
-            Não é novidade que os inputs estão presenta na maioria dos sites, então logo abaixo vou deixar alguns exemplos interativos para você praticar em seus testes automatizados! 
-        
+            Não é novidade que os inputs estão presenta na maioria dos sites, então logo abaixo vou deixar alguns
+            exemplos interativos para você praticar em seus testes automatizados!
+
         </p>
         <div class="grid">
             <article>
                 <h3>Checkbox</h3>
-                <div class="inputCheckbox inputsTreinamento">
+                <div class="inputsTreinamento">
                     <div class="inputCheckbox">
-                    <form>
-                    <label for="inputCheckbox">Opção 1</label>
-            <input type="checkbox" name="inputCheckbox" id="inputCheckbox1" value="Opção 1">
-            <label for="inputCheckbox">Opção 2</label>
-            <input type="checkbox" name="inputCheckbox" id="inputCheckbox2" value="Opção 2">
-            <button type="submit" class="buttonInputs" onclick="informarOpcoesSelecionadas('checkbox')">Enviar</button>
-            <button type="reset" class="buttonInputs">Reset</button>
-        </form>
-        <p>Ambas podem ser selecionadas.</p>
-               </div>
-            </div>
-                   <!---->
+                        <form>
+                            <label for="inputCheckbox">Opção 1</label>
+                            <input type="checkbox" name="inputCheckbox" id="inputCheckbox1" value="Opção 1">
+                            <label for="inputCheckbox">Opção 2</label>
+                            <input type="checkbox" name="inputCheckbox" id="inputCheckbox2" value="Opção 2">
+                            <button type="submit" class="buttonInputs"
+                                onclick="informarOpcoesSelecionadas('checkbox')">Enviar</button>
+                            <button type="reset" class="buttonInputs">Reset</button>
+                        </form>
+                        <br><p class="p-inputsTreinamento">Ambas podem ser selecionadas.</p>
+                    </div>
+                </div>
+                <!---->
             </article>
             <article>
                 <h3>Radio Button</h3>
                 <div class="inputsTreinamento">
                     <div class="inputRadio">
-            <form>
-           <label for="inputRadio1">Sim
-            <input type="radio" name="inputRadio1" id="inputRadioSim" value="Sim">
-            </label>
-            <label for="inputRadio1">Não
-                <input type="radio" name="inputRadio1" id="inputRadioNao" value="Não">
-               </label>
-               <button type="submit" class="buttonInputs" onclick="informarOpcoesSelecionadas('radio')">Enviar</button>
-               <button type="reset" class="buttonInputs">Reset</button>
-            </form>
-            <p>Só uma opção pode ser selecionada.</p>
-        </div>
-        </div>
+                        <form>
+                            <label for="inputRadio1">Sim
+                                <input type="radio" name="inputRadio1" id="inputRadioSim" value="Sim">
+                            </label>
+                            <label for="inputRadio1">Não
+                                <input type="radio" name="inputRadio1" id="inputRadioNao" value="Não">
+                            </label>
+                            <button type="submit" class="buttonInputs"
+                                onclick="informarOpcoesSelecionadas('radio')">Enviar</button>
+                            <button type="reset" class="buttonInputs">Reset</button>
+                        </form>
+                        <br><p class="p-inputsTreinamento">Só uma opção pode ser selecionada.</p>
+                    </div>
+                </div>
 
-        
+
 
             </article>
             <article>
-                <h3>Teste 3</h3>
-                <div class="inputData inputsTreinamento">
+                <h3>Date</h3>
+                <div class="inputsTreinamento">
                     <div class="inputData">
-                        <form >
-                    <label for="inputData">Selecione uma data</label>
-            <input type="date" name="inputData" id="inputData">
-            <button type="submit" class="buttonInputs" onclick="informarDataSelecionada()">Enviar</button>
-            <button type="reset" class="buttonInputs">Reset</button>
+                        <form>
+                            <label for="inputData">Selecione uma data:</label>
+                            <input type="date" name="inputData" id="inputData">
+                            <button type="submit" class="buttonInputs"
+                                onclick="informarDataOuHoraSelecionada('data')">Enviar</button>
+                            <button type="reset" class="buttonInputs">Reset</button>
+                        </form>
+                       
+                        <p class="p-inputsTreinamento">Selecione ou digite.</p>
+                        
+                    </div>
+                </div>
+            </article>
 
-        </form>
+            <article>
+                <h3>Number</h3>
+                <div class="inputsTreinamento">
+                    <div class="inputNumber">
+                        <form>
+                            <label for="inputNumber">Selecione um número:</label>
+                          <input type="number" name="inputNumber" id="inputNumber">
+                            <button type="submit" class="buttonInputs"
+                            onclick="informarNumeroSelecionado()">Enviar</button>
+                            <button type="reset" class="buttonInputs">Reset</button>
+                        </form>
+                       
+                        <p class="p-inputsTreinamento">Selecione ou digite.</p>
+                        
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h3>Time</h3>
+                <div class="inputsTreinamento">
+                    <div class="inputTime">
+                        <form>
+                            <label for="inputTime">Selecione um horário:</label> <br>
+                          <input type="time" name="inputTime" id="inputTime">
+                            <button type="submit" class="buttonInputs"
+                            onclick="informarDataOuHoraSelecionada('hora')">Enviar</button>
+                            <button type="reset" class="buttonInputs">Reset</button>
+                        </form>
+                       
+                        <p class="p-inputsTreinamento">Selecione ou digite.</p>
+                        
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h3>File</h3>
+                <div class="inputsTreinamento">
+                    <div class="inputFile">
+                        <form>
+                            <label for="inputFile">Escolha um arquivo:</label> <br>
+                            <input type="file" name="inputFile" id="inputFile">
+                            <button type="submit" class="buttonInputs"
+                            onclick="informarArquivoEscolhido()">Enviar</button>
+                            <button type="reset" class="buttonInputs">Reset</button>
+                        </form>
+                       
+                        <!--<p class="p-inputsTreinamento">Selecione arquivos</p>-->
+                        
+                    </div>
+                </div>
+            </article>
         </div>
-        </div>
-            </article>
-
-            <article>
-                <h3 id="h3-inputs-4">Teste 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non assumenda facere vitae ipsam,
-                    praesentium consequuntur laboriosam, deleniti facilis distinctio eius. Nesciunt perspiciatis quidem,
-                    deserunt esse odio porro saepe temporibus.</p>
-            </article>
-
-            <article>
-                <h3 id="h3-inputs-5">Teste 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non assumenda facere vitae ipsam,
-                    praesentium consequuntur laboriosam, deleniti facilis distinctio eius. Nesciunt perspiciatis quidem,
-                    deserunt esse odio porro saepe temporibus.</p>
-            </article>
-
-            <article>
-                <h3 id="h3-inputs-6">Teste 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non assumenda facere vitae ipsam,
-                    praesentium consequuntur laboriosam, deleniti facilis distinctio eius. Nesciunt perspiciatis quidem,
-                    deserunt esse odio porro saepe temporibus.</p>
-            </article>
     </div>
-</div>
 </section>
 <section id="pricing" class="white-bg-section">
     <div class="main-content testeQa-content">
