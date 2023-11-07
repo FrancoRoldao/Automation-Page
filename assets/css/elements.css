@@ -90,3 +90,7 @@ html ::-webkit-scrollbar-track {
   background: #ededed;
 }
 /*fim tratamento barra de rolagem*/
+
+input:hover{
+  cursor: pointer;
+}
