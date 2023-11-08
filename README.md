@@ -3,7 +3,7 @@
 Página desenvolvida em HTML, CSS E Javascript. <br>
 A idéia da criação surgiu durante um periodo de estudos.
 
-:➡️ Link da página: https://francoroldao.github.io/Automation-Page/ :🖥️
+➡️ Link da página: https://francoroldao.github.io/Automation-Page/ 🖥️
 
 <a href="https://github.com/FrancoRoldao/Automation-Page/blob/master/documenta%C3%A7%C3%A3o.md">Clique para acessar a documentação da Automation Page.</a>
 
