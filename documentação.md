@@ -4,11 +4,11 @@
 
 <ul>
   <li> <b>Menu superior interativo</b> - click direciona para cada seção correspondente.</li>
-  <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-menuSuperior.png" style="width: 800px", "height: 800px"> <br><br>
+  <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-menuSuperior.png" style="width: 800px", height: 800px"> <br><br>
  
   <li><b>Menu superior versão mobile</b> - quando a página atinge a largura menor que 800, o menu superior padrão some da página e vira um icone de 3 listras, onde é possível clicar para acessar as opções do menu e clicar em um X para fecha-lo. (O direcionamento para as seções continua funcionando normalmente). </li>
   <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-menuSuperiorMobile-1.png">
-  <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-menuSuperiorMobile-2.png"style="width: 250px", "height: 250px"> <br><br>
+  <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-menuSuperiorMobile-2.png"style="width: 250px", height: 250px"> <br><br>
   
   <li><b>Icone 'back to top' </b> - icone exibido sempre na parte inferior da página, click direciona ao topo da página / seção intro.</li>
   <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-backtotop.png"> <br><br>
@@ -26,6 +26,9 @@
   </li>
   <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-inputs-1.png" style="width: 250px", height: 250px">
   <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-inputs-2.png" style="width: 250px", height: 250px"> <br><br>
+  
   <li><b>Validação do preenchimento (ou não) do formulário de contato</b> - se algum campo do formulário estiver vazio (ou todos), é exibido um alerta informando que o form não foi enviado. Caso todos estejam preenchidos, é exibido um alerta informando o sucesso do envio.</li>
+  <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-form-1.png" style="width: 250px", height: 250px">
+  <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-form-2.png" style="width: 250px", height: 250px">
   <li><b>Footer direciona para a minha rede social (linkedIn).</b></li>
 </ul>
