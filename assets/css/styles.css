@@ -5,7 +5,6 @@
 
 .intro-content {
     position: relative;
-    /* top: -8rem;*/
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -32,7 +31,6 @@
     max-width: 64rem;
     min-height: 100vh;
     display: flex;
-    /*flex-flow: column wrap;*/
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
@@ -307,7 +305,8 @@ div .curiosidades-text {
 }
 
 #curiosidades-linguagemProgramacao {
-    background-color: rgba(22, 21, 21, 0.938);
+    background-color: rgba(22, 21, 21, 0.844);
+    
 }
 
 #curiosidades-selenium {
@@ -315,11 +314,11 @@ div .curiosidades-text {
 }
 
 #curiosidades-junit {
-    background-color: rgb(2, 58, 38);
+    background-color: rgba(21, 85, 67, 0.995);
 }
 
 #curiosidades-cucumber {
-    background-color: rgb(97, 161, 97);
+    background-color: rgb(105, 195, 105);
 }
 
 #curiosidades-appium {
@@ -327,5 +326,13 @@ div .curiosidades-text {
 }
 
 #curiosidades-restAssured {
-    background-color: rgba(22, 21, 21, 0.938);
+    background-color: rgb(185, 178, 169);
+    color: black;
 }
+
+#inputCheckbox {
+    background-color: var(--primary-clor);
+}
+
+
+  

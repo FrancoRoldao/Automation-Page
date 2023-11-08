@@ -69,8 +69,10 @@ function informarNumeroSelecionado(){
    if(isNaN(numeroSelecionadoComoNumber)){
 
     alert("Nenhum número selecionado!");
+
    } else{
     alert("Você selecionou o número → " + numeroSelecionadoComoNumber);
+    
    }
 }
 
@@ -86,6 +88,22 @@ function informarArquivoEscolhido(){
         alert("Arquivo inserido → " + arquivoTratado[2]);
     }
    }
+
+   function validarCamposFormularioDeContato(){
+
+    let campoNome = document.getElementById("nome").value;
+    let campoSobrenome = document.getElementById("sobrenome").value;
+    let campoEmail = document.getElementById("email").value;
+    let campoMensagem = document.getElementById("mensagem").value;
+
+    if(campoNome === "" || campoSobrenome === "" || campoEmail === "" || campoMensagem === ""){
+
+        alert("Formulário NÃO enviado, todos os campos são obrigatórios.");
+    } else {
+
+        alert("Formulário enviado.");
+    }
+}
 
 
 

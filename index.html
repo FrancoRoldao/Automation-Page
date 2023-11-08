@@ -438,7 +438,7 @@
             A tag <b>input</b> é um elemento vazio, o que significa que não tem uma tag de fechamento. Em vez disso, as
             informações sobre o tipo de entrada e o valor são especificadas usando atributos. <br><br>
 
-            Não é novidade que os inputs estão presenta na maioria dos sites, então logo abaixo vou deixar alguns
+            Não é novidade que os inputs estão presentes na maioria dos sites, então logo abaixo vou deixar alguns
             exemplos interativos para você praticar em seus testes automatizados!
 
         </p>
@@ -456,7 +456,8 @@
                                 onclick="informarOpcoesSelecionadas('checkbox')">Enviar</button>
                             <button type="reset" class="buttonInputs">Reset</button>
                         </form>
-                        <br><p class="p-inputsTreinamento">Ambas podem ser selecionadas.</p>
+                        <br>
+                        <p class="p-inputsTreinamento">Ambas podem ser selecionadas.</p>
                     </div>
                 </div>
                 <!---->
@@ -476,7 +477,8 @@
                                 onclick="informarOpcoesSelecionadas('radio')">Enviar</button>
                             <button type="reset" class="buttonInputs">Reset</button>
                         </form>
-                        <br><p class="p-inputsTreinamento">Só uma opção pode ser selecionada.</p>
+                        <br>
+                        <p class="p-inputsTreinamento">Só uma opção pode ser selecionada.</p>
                     </div>
                 </div>
 
@@ -494,9 +496,9 @@
                                 onclick="informarDataOuHoraSelecionada('data')">Enviar</button>
                             <button type="reset" class="buttonInputs">Reset</button>
                         </form>
-                       
+
                         <p class="p-inputsTreinamento">Selecione ou digite.</p>
-                        
+
                     </div>
                 </div>
             </article>
@@ -507,14 +509,14 @@
                     <div class="inputNumber">
                         <form>
                             <label for="inputNumber">Selecione um número:</label>
-                          <input type="number" name="inputNumber" id="inputNumber">
+                            <input type="number" name="inputNumber" id="inputNumber">
                             <button type="submit" class="buttonInputs"
-                            onclick="informarNumeroSelecionado()">Enviar</button>
+                                onclick="informarNumeroSelecionado()">Enviar</button>
                             <button type="reset" class="buttonInputs">Reset</button>
                         </form>
-                       
+
                         <p class="p-inputsTreinamento">Selecione ou digite.</p>
-                        
+
                     </div>
                 </div>
             </article>
@@ -525,14 +527,14 @@
                     <div class="inputTime">
                         <form>
                             <label for="inputTime">Selecione um horário:</label> <br>
-                          <input type="time" name="inputTime" id="inputTime">
+                            <input type="time" name="inputTime" id="inputTime">
                             <button type="submit" class="buttonInputs"
-                            onclick="informarDataOuHoraSelecionada('hora')">Enviar</button>
+                                onclick="informarDataOuHoraSelecionada('hora')">Enviar</button>
                             <button type="reset" class="buttonInputs">Reset</button>
                         </form>
-                       
+
                         <p class="p-inputsTreinamento">Selecione ou digite.</p>
-                        
+
                     </div>
                 </div>
             </article>
@@ -545,12 +547,12 @@
                             <label for="inputFile">Escolha um arquivo:</label> <br>
                             <input type="file" name="inputFile" id="inputFile">
                             <button type="submit" class="buttonInputs"
-                            onclick="informarArquivoEscolhido()">Enviar</button>
+                                onclick="informarArquivoEscolhido()">Enviar</button>
                             <button type="reset" class="buttonInputs">Reset</button>
                         </form>
-                       
+
                         <!--<p class="p-inputsTreinamento">Selecione arquivos</p>-->
-                        
+
                     </div>
                 </div>
             </article>
@@ -560,13 +562,15 @@
 <section id="table" class="white-bg-section">
     <div class="main-content testeQa-content">
         <h2>Table</h2>
-        <p>Uma tabela em HTML é um elemento fundamental para a organização e exibição de dados tabulares em uma página da web.
-             Ela é construída usando uma estrutura de marcação que consiste em várias tags específicas, sendo as principais:</p>
+        <p>Uma tabela em HTML é um elemento fundamental para a organização e exibição de dados tabulares em uma página
+            da web.
+            Ela é construída usando uma estrutura de marcação que consiste em várias tags específicas, sendo as
+            principais:</p>
 
 
         <div class="responsive-table">
             <table>
-                <caption>table</caption>
+                <caption>Caption</caption>
 
                 <thead>
                     <tr>
@@ -580,29 +584,29 @@
 
                 <tbody>
                     <tr>
-                        <td>Content 1</td>
-                        <td>Content 2</td>
-                        <td>Content 3</td>
-                        <td>Content 3</td>
-                        <td>Content 3</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
                     </tr>
                     <tr>
-                        <td>Content 1</td>
-                        <td>Content 2</td>
-                        <td>Content 3</td>
-                        <td>Content 3</td>
-                        <td>Content 3</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
                     </tr>
                     <tr>
-                        <td>Content 1</td>
-                        <td>Content 2</td>
-                        <td>Content 3</td>
-                        <td>Content 3</td>
-                        <td>Content 3</td>
-                    </tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                    </tr>     
                 </tbody>
 
-                <tfoot>
+              <!--  <tfoot>
                     <tr>
                         <td></td>
                         <td></td>
@@ -610,24 +614,27 @@
                         <td></td>
                         <td>Footer</td>
                     </tr>
-                </tfoot>
+                </tfoot> -->
             </table>
         </div>
         <div class="tableText">
-        <p>
+            <p>
 
-            <br>
-            
-            <b>table :</b> A tag de abertura da tabela define o início de uma tabela HTML. Ela envolve todo o conteúdo da tabela.<br><br>
+                <br>
 
-            <b>tr :</b> A tag (table row) é usada para criar as linhas horizontais da tabela.<br><br>
-                
-            <b>th :</b> A tag (table header) é usada para criar células de cabeçalho.<br><br>
-                
-            <b>td :</b> A tag de célula de tabela (table data) é usada para criar as células de dados, que contêm o conteúdo principal da tabela.<br><br>
-                
-           <b>caption :</b> O elemento caption é opcional e usado para fornecer um título ou descrição para a tabela. Ele é colocado dentro da tag 'table' e aparece acima da tabela.<br><br>
-            
+                <b>table :</b> A tag de abertura da tabela define o início de uma tabela HTML. Ela envolve todo o
+                conteúdo da tabela.<br><br>
+
+                <b>tr :</b> A tag (table row) é usada para criar as linhas horizontais da tabela.<br><br>
+
+                <b>th :</b> A tag (table header) é usada para criar células de cabeçalho.<br><br>
+
+                <b>td :</b> A tag de célula de tabela (table data) é usada para criar as células de dados, que contêm o
+                conteúdo principal da tabela.<br><br>
+
+                <b>caption :</b> O elemento caption é opcional e usado para fornecer um título ou descrição para a
+                tabela. Ele é colocado dentro da tag 'table' e aparece acima da tabela.<br><br>
+
             </p>
         </div>
     </div>
@@ -672,7 +679,7 @@
                 </div>
 
                 <div class="form-group full-width">
-                    <button type="submit" id="enviarForm" onclick="alert('Seu formulário foi enviado!')">Enviar
+                    <button type="submit" id="enviarForm" onclick="validarCamposFormularioDeContato()">Enviar
                         mensagem</button>
 
                 </div>
@@ -682,10 +689,9 @@
         </div>
     </div>
     <footer id="footer" class="white-bg-section">
-        <p>
-            <a href="">Feito com
-                <span class="heart">♥</span>
-                por Franco Roldão</a>
+        <p class="p-testeQA">
+            Página desenvolvida por
+            <a href="https://www.linkedin.com/in/francoroldao/" target="_blank">Franco Roldão</a>
         </p>
     </footer><a class="back-to-top" href="#">⮝</a></body>
 
