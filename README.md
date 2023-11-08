@@ -1,6 +1,6 @@
 # Automation Page
 
-Página no estilo landing page, utilizando HTML, CSS E Javascript. 
+Página desenvolvida em HTML, CSS E Javascript. <br>
 A idéia da criação surgiu durante um periodo de estudos.
 
 # Sobre a página
