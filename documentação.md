@@ -17,12 +17,15 @@
   <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-cardCuriosidades-1.png">
   <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-cardCuriosidades-2.png">
  
-  <li><b>Inputs interativos (seção <i>Inputs</i>)</b> - ao realizar (ou não) o preenchimento de cada input e acionar o botão "enviar", são realizadas duas verificações:
+  <li><b>Inputs interativos (seção <i>Inputs</i>)</b> - ao realizar (ou não) o preenchimento de cada input e acionar o botão "enviar", podem ser realizadas 3 tipos de ações:
   <ol type="1">
     <li>Se o campo estiver preenchido ou selecionado, é exibido um alerta informando o valor preenchido/selecionado.</li>
     <li>Se nenhum campo estiver preenchido ou selecionado, é exibido um alerta informando que nenhum valor foi preenchido/selecionado.</li>
+    <li>Se o botão "reset" for acionado, os valores informados são apagados.</li>
   </ol>
   </li>
+  <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-inputs-1.png" style="width: 250px", height: 250px">
+  <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-inputs-2.png" style="width: 250px", height: 250px"> <br><br>
   <li><b>Validação do preenchimento (ou não) do formulário de contato</b> - se algum campo do formulário estiver vazio (ou todos), é exibido um alerta informando que o form não foi enviado. Caso todos estejam preenchidos, é exibido um alerta informando o sucesso do envio.</li>
   <li><b>Footer direciona para a minha rede social (linkedIn).</b></li>
 </ul>
