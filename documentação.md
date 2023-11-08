@@ -29,6 +29,8 @@
   
   <li><b>Validação do preenchimento (ou não) do formulário de contato</b> - se algum campo do formulário estiver vazio (ou todos), é exibido um alerta informando que o form não foi enviado. Caso todos estejam preenchidos, é exibido um alerta informando o sucesso do envio.</li>
   <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-form-1.png" style="width: 250px", height: 250px">
-  <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-form-2.png" style="width: 250px", height: 250px">
-  <li><b>Footer direciona para a minha rede social (linkedIn).</b></li>
+  <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-form-2.png" style="width: 250px", height: 250px"> <br><br>
+  
+  <li><b>Ao clicar em "Franco Roldão" no footer, ocorre um direcionamento em uma nova guia, para a minha rede social (linkedIn).</b></li>
+  <img src="https://github.com/FrancoRoldao/Automation-Page/blob/master/assets/img/documentacao-imgs/doc-footer.png"> <br><br>
 </ul>
